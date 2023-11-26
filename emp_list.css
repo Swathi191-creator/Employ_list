@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+        background-image: linear-gradient(to top right,pink,white,cadetblue);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        min-height: 100vh; /* Change height to min-height */
+        margin: 0;
+        overflow: auto;
+}
+.header,.navigations,.footer{
+background-color: palevioletred;
+display: grid;
+place-content: center;
+/* min-width: 100px; */
+box-sizing: border-box;
+}
+.header{
+    color: black;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 20px;
+}
+.navigations{
+    height: 70px;
+    background-color: cadetblue;
+    position: sticky; 
+   top: 0;
+}
+.navigations ul{
+    display: flex;
+    gap:25px;
+    flex-wrap: wrap;
+    flex: 1;
+}
+.navigations .list {
+list-style-type: none;
+/* flex: 1; */
+}
+.navigations .list a{
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+.main-section{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+.section1{
+    width: 300px;
+    overflow: auto;
+    height: 400px;
+    background-color:rgba(212, 204, 192,0.4) ;
+    /* border: 2px solid blue; */
+    margin:50px 10px;
+    border-radius: 20px;
+    
+}
+.section1 img{
+    padding: 10px;
+    width: 100%;
+    height:auto;
+    min-width: 100px;
+    border-radius: 50%;
+}
+.one{
+    min-height :70vh;
+}
+#swathi,#pranathi,#santhosh,#kriti,#joe,#alia,#pathirana,#ishu{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 30px;
+}
+#swathi p,#pranathi p,#santhosh p,#kriti p,#ishu p,#joe p,#alia p,#pathirana p{
+    margin-top: 0px;
+    font-size: 30px;
+    font-weight: 700;
+}
+#swathi .swathi1,#pranathi .swathi1,#santhosh .swathi1,#kriti .swathi1,#ishu .swathi1,#joe .swathi1,#alia .swathi1,#pathirana .swathi1{
+    font-weight:lighter;
+}
+/* #pranathi p{
+    margin-top: 0px;
+    font-size: 30px;
+    font-weight: 700;
+} */
+/* #pranathi .swathi1{
+    font-weight:lighter;
+} */
+/* #santhosh p{
+    margin-top: 0px;
+    font-size: 30px;
+    font-weight: 700;
+} */
+/* #santhosh .swathi1{
+    font-weight:lighter;
+} */
+
+.footer{
+    height: 70px;
+    background-color: palevioletred;
+    position: sticky;
+    bottom: 0;
+}
+.footer .list {
+    list-style-type: none;
+}
+.footer ul{
+    display: flex;
+    gap: 40px;
+}
+.footer .list a{
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+@media screen  and (min-width-320px){
+    .navigations ul{
+        display: flex;
+        gap:20px;
+        flex-wrap: wrap;
+        flex: 1;
+    }
+   
+}
